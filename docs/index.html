@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OwnTakeoff: PDF plan takeoff for Windows and Android</title>
+<meta name="description" content="OwnTakeoff measures lengths, areas and counts on PDF building plans and exports quantities to Excel. Buy once for $149, no subscription. Windows and Android.">
+<meta property="og:title" content="OwnTakeoff: PDF plan takeoff">
+<meta property="og:description" content="Measure PDF plans, price the job. Buy once, no subscription.">
+<meta property="og:image" content="https://nookeshkarri7.github.io/owntakeoff/assets/feature-graphic-1024x500.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<style>
+  :root { --paper:#f4f5f1; --sheet:#fff; --ink:#13233a; --graphite:#4a5a70; --line:#d5dbe3; --blue:#1f5fad; --orange:#e8590c; --band:#13233a; --band-text:#f4f5f1; --band-muted:#c9d3e0; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#0f1828; --sheet:#18243a; --ink:#e4eaf3; --graphite:#9aaabf; --line:#2c3a52; --blue:#7fb0ef; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 'IBM Plex Sans', system-ui, sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+  header { background:var(--band); color:var(--band-text); padding:56px 0 64px;
+    background-image: linear-gradient(#273a56 1px, transparent 1px), linear-gradient(90deg, #273a56 1px, transparent 1px); background-size:32px 32px; }
+  .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:22px; }
+  .brand img { width:44px; height:44px; border-radius:10px; }
+  h1 { font-size:clamp(32px, 6vw, 52px); line-height:1.1; margin:36px 0 16px; }
+  header p { color:var(--band-muted); max-width:560px; margin:0 0 28px; }
+  .buttons { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:8px; font-weight:600; text-decoration:none; }
+  .btn.primary { background:var(--orange); color:#fff; }
+  .btn.ghost { border:1px solid var(--band-muted); color:var(--band-text); }
+  section { padding:56px 0 8px; }
+  h2 { font-size:28px; margin:0 0 20px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:16px; }
+  .card { background:var(--sheet); border:1px solid var(--line); border-radius:10px; padding:18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card span { color:var(--graphite); font-size:15px; }
+  .shots { display:grid; grid-template-columns:3fr 1fr; gap:16px; align-items:start; }
+  .shots img { width:100%; border-radius:10px; border:1px solid var(--line); display:block; }
+  @media (max-width:640px) { .shots { grid-template-columns:1fr; } }
+  .video { position:relative; aspect-ratio:16/9; border-radius:10px; overflow:hidden; border:1px solid var(--line); }
+  .video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .price { font-family:'IBM Plex Mono', monospace; color:var(--orange); }
+  footer { margin-top:56px; padding:28px 0 40px; border-top:1px solid var(--line); color:var(--graphite); font-size:15px; }
+  footer a, section a { color:var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><img src="assets/icon-512.png" alt="">OwnTakeoff</div>
+    <h1>Measure PDF plans.<br>Price the job.</h1>
+    <p>A takeoff tool for estimators and trades: set the scale, measure lengths, areas and counts, and send the quantities to Excel. Buy it once and keep it.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://apps.microsoft.com/detail/9PFMC7RTT9WG?utm_source=github&amp;utm_medium=pages">Get it for Windows</a>
+      <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.nktools.owntakeoff&amp;utm_source=github&amp;utm_medium=pages">Get it on Google Play</a>
+      <a class="btn ghost" href="https://owntakeoff.pages.dev/">Website</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>What you can do</h2>
+    <div class="grid">
+      <div class="card"><b>Set any scale</b><span>Architectural, engineering and metric presets, or calibrate from a known dimension.</span></div>
+      <div class="card"><b>Measure three ways</b><span>Length, area with perimeter, and counts, with totals updating as you click.</span></div>
+      <div class="card"><b>Organise by condition</b><span>One colour per item you price, with running totals across every page.</span></div>
+      <div class="card"><b>Export</b><span>CSV for Excel, plus a marked-up PDF with a legend for the GC or your crew.</span></div>
+      <div class="card"><b>Stays on your machine</b><span>No account, no cloud upload. Works offline.</span></div>
+      <div class="card"><b>Buy once</b><span>Windows Pro is <span class="price">$149</span> one-time, 2 computers per key. Android is free with ads.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>See it</h2>
+    <div class="shots">
+      <img src="assets/windows-takeoff.png" alt="OwnTakeoff on Windows measuring carpet, vinyl, walls and outlets on a clinic floor plan" width="1920" height="1080">
+      <img src="assets/android-takeoff.png" alt="OwnTakeoff on an Android phone" width="1080" height="1920">
+    </div>
+  </section>
+
+  <section>
+    <h2>Demo video</h2>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/D0mo3xcjdNo" title="OwnTakeoff demo" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="https://owntakeoff.pages.dev/">owntakeoff.pages.dev</a> ·
+    <a href="https://owntakeoff.pages.dev/privacy/">Privacy policy</a> ·
+    <a href="mailto:anithabheesetty@gmail.com">Support</a> ·
+    <a href="https://github.com/nookeshkarri7/owntakeoff">GitHub</a>
+    <p>© 2026 NK Tools</p>
+  </div>
+</footer>
+</body>
+</html>
